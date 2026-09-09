@@ -1,0 +1,267 @@
+/* Homepage hero - dark green background box */
+.eco-hero {
+  position: relative;
+  background: #1f3a2e;
+  overflow: hidden;
+  padding: 70px 0 0;
+}
+.eco-hero-inner { display: block; }
+.eco-hero-text { max-width: 640px; }
+
+/* Small label above the title (with the little dot) */
+.eco-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d98a5f;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.eco-hero-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d98a5f;
+  display: inline-block;
+}
+
+/* Main title and subtitle text */
+.eco-hero-title {
+  font-size: 56px;
+  line-height: 1.1;
+  color: #fdfaf3;
+  margin: 0 0 24px;
+  font-weight: 400;
+}
+.eco-hero-title em { color: #a9c6ab; font-style: italic; }
+.eco-hero-sub {
+  color: #cdd9cd;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 440px;
+  margin-bottom: 32px;
+}
+
+/* Buttons ("Take the quiz" / "Browse eco tips") */
+.eco-hero-buttons { display: flex; gap: 14px; margin-bottom: 20px; }
+.eco-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none !important;
+  font-size: 15px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.eco-btn:hover { transform: translateY(-2px); opacity: 0.92; text-decoration: none !important; }
+.eco-btn-light { background: #fdfaf3; color: #1f3a2e; }
+.eco-btn-dark { background: #16281f; color: #fdfaf3; border: 1px solid rgba(255,255,255,0.15); }
+
+/* Box that holds the growing sprouts animation */
+.eco-hero-sprouts { width: 100%; height: 260px; margin-top: 20px; }
+
+/* Smaller screens - shrink the title */
+@media (max-width: 782px) {
+  .eco-hero-title { font-size: 38px; }
+}
+
+/* Homepage - makes this one video bigger than the normal video box */
+.tip-video-wrap-lg { max-width: 1400px !important; }
+
+/* Homepage / Eco Tips hub - Articles, Videos, Games section */
+.ecotips-list { padding: 70px clamp(20px,5vw,80px) 90px; }
+
+.ecotips-list-inner { max-width: 1400px; margin: 0 auto; display: flex !important; flex-direction: column !important; gap: 36px; }
+
+/* Header above the cards */
+.ecotips-list-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; }
+.ecotips-list-eyebrow { color: #d98a5f; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 10px; }
+.ecotips-list-title { font-size: 30px; color: #1a2e22; margin: 0; max-width: 560px; line-height: 1.3; }
+.ecotips-list-btn { display: inline-block; background: #fdfaf3; border: 1px solid #e8e2d3; color: #1a2e22; font-weight: 600; font-size: 14px; padding: 10px 22px; border-radius: 999px; text-decoration: none !important; white-space: nowrap; transition: background-color 0.2s ease, color 0.2s ease; }
+.ecotips-list-btn:hover { background: #1f3a2e; color: #fdfaf3; }
+
+.ecotips-cards-row { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+
+@media (max-width: 1000px) { .ecotips-cards-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .ecotips-cards-row { grid-template-columns: 1fr; } .ecotips-list-head { flex-direction: column; align-items: flex-start; } }
+
+/* Cards */
+.ecotips-card { background: #fff; border-radius: 20px; padding: 44px 48px; box-shadow: 0 4px 20px rgba(31,58,46,0.06); }
+
+.ecotips-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.ecotips-card-head h2 { font-size: 22px; color: #1a2e22; margin: 0; }
+.ecotips-card-head svg { width: 20px; height: 20px; color: #2E4A38; }
+
+.ecotips-items { display: flex; flex-direction: column; }
+.ecotips-item { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #eee6d8; text-decoration: none !important; gap: 20px; }
+.ecotips-items .ecotips-item:last-child { border-bottom: none; }
+
+.ecotips-item-cat { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #4a8f52; margin-bottom: 6px; }
+.ecotips-item-text h3 { font-size: 17px; color: #1a2e22; margin: 0; font-weight: 700; }
+.ecotips-item-desc { color: #6b7a6b; font-size: 14px; line-height: 1.5; margin: 6px 0 0; max-width: 380px; }
+
+.ecotips-item-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.ecotips-item-time { color: #8a978a; font-size: 13px; white-space: nowrap; }
+.ecotips-item-arrow { color: #8a978a; font-size: 18px; transition: transform 0.15s ease; }
+.ecotips-item:hover .ecotips-item-arrow { transform: translateX(4px); color: #1f3a2e; }
+
+.ecotips-video-item { justify-content: flex-start; gap: 16px; }
+.ecotips-play-icon { flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; background: #2E4A38; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+
+/* Games items */
+.ecotips-games-items { display: flex; flex-direction: column; gap: 20px; }
+.ecotips-game-item { display: block; padding: 16px; border-radius: 14px; background: #fdfaf3; text-decoration: none !important; transition: background-color 0.2s ease; }
+.ecotips-game-item:hover { background: #f4ede0; }
+.ecotips-game-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.ecotips-game-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.ecotips-game-tag--green { background: #E3F3E6; color: #2E4A38; }
+.ecotips-game-tag--blue { background: #DCEEF8; color: #2E6B8A; }
+.ecotips-game-item h3 { font-size: 16px; color: #1a2e22; margin: 0 0 4px; font-weight: 700; }
+
+/* Videos card - dark green background */
+.ecotips-card--video { background: #1f3a2e; }
+.ecotips-card--video .ecotips-card-head h2,
+.ecotips-card--video .ecotips-item-text h3 { color: #fdfaf3; }
+.ecotips-card--video .ecotips-card-head svg { color: #a9c6ab; }
+.ecotips-card--video .ecotips-item-desc { color: #cdd9cd; }
+.ecotips-card--video .ecotips-item { border-bottom-color: rgba(255,255,255,0.12); }
+.ecotips-card--video .ecotips-play-icon { background: #fdfaf3; color: #1f3a2e; }
+
+/* Games card - gradient background */
+.ecotips-card--games { background: linear-gradient(120deg, #cfe8cd 0%, #e6efe0 30%, #f6f0e3 65%, #f8ecd9 100%); }
+.ecotips-card--games .ecotips-card-head h2 { color: #1a2e22; }
+.ecotips-card--games .ecotips-card-head svg { color: #2E4A38; }
+.ecotips-card--games .ecotips-game-item { background: rgba(255,255,255,0.55); }
+.ecotips-card--games .ecotips-game-item:hover { background: rgba(255,255,255,0.85); }
+.ecotips-card--games .ecotips-game-item h3 { color: #1a2e22; }
+.ecotips-card--games .ecotips-item-desc { color: #4b5b4c; }
+.ecotips-card--games .ecotips-item-time { color: #6b7a6b; }
+
+/* Quiz section - light green background box */
+.quiz-select-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #dfe9dd;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Header row: label + title on the left */
+.quiz-select-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+/* Small orange label above the title */
+.quiz-select-eyebrow {
+  color: #d98a5f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+/* Main heading text */
+.quiz-select-title {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  color: #1F2937;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+/* Small note text (not used yet, but styled if added later) */
+.quiz-select-note {
+  max-width: 260px;
+  color: #6B7280;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Grid holding the 3 quiz cards side by side */
+.quiz-select-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Each white quiz card */
+.quiz-select-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Round image circle at the top of each card */
+.quiz-select-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #E3F3E6;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.quiz-select-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Quiz title inside the card */
+.quiz-select-card h3 {
+  font-family: 'Fraunces', serif;
+  color: #1F2937;
+  font-size: 19px;
+  margin: 0 0 8px 0;
+}
+
+/* Short description text inside the card */
+.quiz-select-card p {
+  color: #6B7280;
+  font-size: 14px;
+  margin: 0 0 20px 0;
+  line-height: 1.5;
+}
+
+/* "Take Quiz" button */
+.quiz-select-btn {
+  display: inline-block;
+  background-color: #2E4A38;
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.quiz-select-btn:hover { background-color: #5C8368; }
+
+/* Smaller screens: stack cards into 1 column */
+@media (max-width: 800px) {
+  .quiz-select-grid { grid-template-columns: 1fr; }
+}
+
+
+
