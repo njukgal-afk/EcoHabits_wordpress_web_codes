@@ -187,6 +187,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .eco-footer { width: 100vw; position: relative; left: 50%; transform: translateX(-50%); }
 body { overflow-x: hidden; }
+/* Footer social links, icon + text side by side */
+.eco-footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 /* Homepage hero - big green section with title and buttons */
 .eco-hero { position: relative; background: #1f3a2e; overflow: hidden; padding: 70px 0 0; }
