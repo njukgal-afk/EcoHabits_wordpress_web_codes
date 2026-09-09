@@ -1,0 +1,53 @@
+/* Astra Container flex-row fix - stacks items vertically instead of side by side */
+.ecotips-hero-inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* Eco Tips hero - gradient background box */
+.ecotips-hero {
+  background: linear-gradient(120deg, #cfe8cd 0%, #e6efe0 30%, #f6f0e3 65%, #f8ecd9 100%);
+  padding: 80px 0 70px;
+  text-align: center;
+}
+
+/* Small pill label (not used in the current HTML, but styled if added) */
+.ecotips-pill {
+  display: inline-block;
+  background: #fdfaf3;
+  color: #1f3a2e;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 999px;
+  margin-bottom: 28px;
+}
+
+/* Main hero title - font-family removed so it uses the site's Fraunces font */
+.ecotips-hero-title {
+  font-size: 52px;
+  line-height: 1.2;
+  color: #1a2e22;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+.ecotips-hero-title em {
+  font-style: italic;
+  color: #4a8f52;
+  font-weight: 700;
+}
+
+/* Subtitle text under the title */
+.ecotips-hero-sub {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #5c6b5c;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Smaller screens: shrink the title */
+@media (max-width: 800px) {
+  .ecotips-hero-title { font-size: 36px; }
+}
