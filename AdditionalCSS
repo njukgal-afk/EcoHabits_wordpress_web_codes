@@ -1,0 +1,440 @@
+/* Google Fonts setup */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+body, button, input, select, textarea {
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', ui-serif, Georgia, serif !important;
+}
+
+/* Top menu, navigation links */
+#ast-hf-menu-1 {
+  gap: 8px;
+}
+.menu-link {
+  display: inline-block;
+  line-height: 1.2 !important;
+  transition: background-color 0.2s ease !important;
+  border-radius: 20px !important;
+  padding: 2px 14px !important;
+}
+.menu-link:hover,
+.current-menu-item .menu-link {
+  background-color: #F0E6D2 !important;
+  color: #2E4A38 !important;
+}
+
+/* Icon badges, small colored circles with icons inside */
+.icon-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.icon-badge svg {
+  width: 26px;
+  height: 26px;
+}
+.icon-badge--green { background-color: #E3F3E6; color: #2E4A38; }
+.icon-badge--blue { background-color: #DCEEF8; color: #2E6B8A; }
+.icon-badge--yellow { background-color: #FBF1D6; color: #8A6D1F; }
+.icon-badge--pink { background-color: #FBE4E6; color: #2E4A38; }
+
+/* Buttons inside cover image blocks */
+.wp-block-cover .wp-block-button__link {
+  background-color: #2E4A38 !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 14px 32px !important;
+  font-size: 16px !important;
+}
+
+/* QUIZ STYLING */
+.entry-title {
+  font-size: 22px !important;
+}
+.qsm-quiz-container,
+.mlw_qmn_question,
+.qmn_btn {
+  font-family: inherit !important;
+}
+.mlw_qmn_question {
+  color: #2E4A38;
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+.qmn_mc_answer_wrap {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #E3F3E6;
+  border-radius: 10px;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.qmn_mc_answer_wrap:hover { background-color: #E3F3E6; }
+.qmn_quiz_radio { accent-color: #2E4A38; margin-right: 10px; }
+.qsm-input-label { cursor: pointer; }
+.qsm-quiz-container .qmn_btn,
+.qmn_pagination .qmn_btn {
+  background-color: #2E4A38 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  border-radius: 50px !important;
+  padding: 12px 28px !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.qsm-quiz-container .qmn_btn:hover,
+.qmn_pagination .qmn_btn:hover {
+  background-color: #D8B968 !important;
+  color: #2E4A38 !important;
+}
+.qsm-progress-bar svg path:last-child { stroke: #2E4A38 !important; }
+.qsm-progress-bar { height: 6px !important; }
+.qmn_progress-bar-text,
+.progressbar-text { color: #2E4A38 !important; }
+.mlw_qmn_message_before,
+.qsm-before-message { color: #5B6B5E; }
+
+/* Eco habits section - old homepage cards (no longer used on homepage, kept in case needed elsewhere) */
+.eco-habits-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px clamp(20px, 5vw, 80px);
+}
+.eco-habits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.eco-habits-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2E4A38;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.eco-habits-title { font-size: 42px; color: #1F2937; margin: 0 0 8px 0; }
+.eco-habits-subtitle { color: #6B7280; font-size: 16px; margin: 0; }
+.eco-habits-explore { color: #2E4A38; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.eco-habits-explore:hover { text-decoration: underline; }
+.eco-habits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.eco-habits-card {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  text-decoration: none !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.eco-habits-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+.eco-habits-card h3 { color: #1F2937 !important; font-size: 20px; margin: 0 0 8px 0; text-decoration: none !important; }
+.eco-habits-card p { color: #6B7280 !important; font-size: 15px; margin: 0; line-height: 1.5; text-decoration: none !important; }
+
+/* Eco habits section - smaller screens */
+@media (max-width: 900px) { .eco-habits-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .eco-habits-grid { grid-template-columns: 1fr; } }
+.wp-block-cover__inner-container {
+  padding-left: clamp(20px, 5vw, 80px);
+  padding-right: clamp(20px, 5vw, 80px);
+}
+
+/* Footer */
+.eco-footer { background: #1a3520; padding: 60px 0 0; }
+.eco-footer-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.eco-footer-logo {
+  font-family: 'Fraunces', ui-serif, Georgia, serif !important;
+  font-size: 19px;
+  font-weight: 700;
+  color: #fdfaf3;
+  margin-bottom: 14px;
+}
+.eco-footer-tagline { color: #a8b8a8; font-size: 14px; line-height: 1.5; max-width: 240px; }
+.eco-footer-heading { color: #8fae90; font-size: 11px; letter-spacing: 1px; font-weight: 700; margin-bottom: 16px; }
+.eco-footer-col a { display: block; color: #cdd9cd; font-size: 14px; text-decoration: none !important; margin-bottom: 12px; }
+.eco-footer-col a:hover { color: #fdfaf3; }
+.eco-footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); padding: 20px 0; color: #8a978a; font-size: 12px; }
+@media (max-width: 700px) { .eco-footer-inner { flex-direction: column !important; } }
+
+/* Footer - make it stretch full width, not boxed */
+.site-footer .footer-widget-area,
+.site-footer .ast-builder-footer-row-container,
+.site-footer .ast-builder-grid-row-container {
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.eco-footer { width: 100vw; position: relative; left: 50%; transform: translateX(-50%); }
+body { overflow-x: hidden; }
+
+/* Homepage hero - big green section with title and buttons */
+.eco-hero { position: relative; background: #1f3a2e; overflow: hidden; padding: 70px 0 0; }
+.eco-hero-inner { display: block; }
+.eco-hero-text { max-width: 640px; }
+.eco-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d98a5f;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.eco-hero-dot { width: 7px; height: 7px; border-radius: 50%; background: #d98a5f; display: inline-block; }
+.eco-hero-title { font-size: 56px; line-height: 1.1; color: #fdfaf3; margin: 0 0 24px; font-weight: 400; }
+.eco-hero-title em { color: #a9c6ab; font-style: italic; }
+.eco-hero-sub { color: #cdd9cd; font-size: 17px; line-height: 1.6; max-width: 440px; margin-bottom: 32px; }
+.eco-hero-buttons { display: flex; gap: 14px; margin-bottom: 20px; }
+.eco-btn-dark { background: #16281f; color: #fdfaf3; border: 1px solid rgba(255,255,255,0.15); }
+.eco-hero-sprouts { width: 100%; height: 260px; margin-top: 20px; }
+@media (max-width: 782px) { .eco-hero-title { font-size: 38px; } }
+
+/* Quiz picker section - background and layout */
+.quiz-select-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #dfe9dd;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.quiz-select-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.quiz-select-eyebrow {
+  color: #d98a5f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.quiz-select-title { font-size: 32px; color: #1F2937; margin: 0; font-weight: 400; line-height: 1.25; }
+.quiz-select-note { max-width: 260px; color: #6B7280; font-size: 14px; line-height: 1.5; margin: 0; }
+.quiz-select-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.quiz-select-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quiz-select-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #E3F3E6;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.quiz-select-image img { width: 100%; height: 100%; object-fit: cover; }
+.quiz-select-card h3 { color: #1F2937; font-size: 19px; margin: 0 0 8px 0; }
+.quiz-select-card p { color: #6B7280; font-size: 14px; margin: 0 0 20px 0; line-height: 1.5; }
+.quiz-select-btn {
+  display: inline-block;
+  background-color: #2E4A38;
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.quiz-select-btn:hover { background-color: #5C8368; }
+@media (max-width: 800px) { .quiz-select-grid { grid-template-columns: 1fr; } }
+
+/* About page - full width fix for hero and other sections */
+.about-hero-inner { display: flex !important; flex-direction: column !important; align-items: center !important; }
+.about-video, .about-story { display: flex !important; flex-direction: column !important; }
+
+/* About page - hero */
+.about-hero { background: linear-gradient(120deg, #cfe8cd 0%, #e6efe0 30%, #f6f0e3 65%, #f8ecd9 100%); padding: 80px 0 70px; text-align: center; }
+.about-pill { display: inline-block; background: #fdfaf3; color: #1f3a2e; font-size: 13px; font-weight: 600; padding: 8px 20px; border-radius: 999px; margin-bottom: 28px; }
+.about-hero-title { font-size: 52px; line-height: 1.2; color: #1a2e22; font-weight: 700; margin: 0 0 24px; }
+.about-hero-title em { font-style: italic; color: #4a8f52; font-weight: 700; }
+.about-hero-sub { max-width: 640px; margin: 0 auto; color: #5c6b5c; font-size: 17px; line-height: 1.6; }
+
+/* About page - green story card */
+.about-story { padding: 70px 0 90px; }
+.about-story-box { background: #1f3a2e; border-radius: 24px; padding: 56px 48px; display: flex; justify-content: space-between; align-items: center; gap: 48px; flex-wrap: wrap; }
+.about-story-left { flex: 0 0 auto; }
+.about-story-heart { width: 26px; height: 26px; color: #a9c6ab; margin-bottom: 16px; display: block; }
+.about-story-left h2 { font-size: 32px; color: #fdfaf3; margin: 0; font-weight: 400; max-width: 280px; }
+.about-story-right { flex: 1 1 400px; max-width: 560px; display: flex; flex-direction: column; gap: 28px; }
+.about-story-text { color: #e3ebe0; font-size: 19px; line-height: 1.75; margin: 0; }
+.about-story-links { display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* About page - video box */
+.about-video { padding: 60px 0 20px; }
+.about-video-wrap { position: relative !important; width: 100% !important; max-width: 800px !important; aspect-ratio: 16 / 9 !important; margin: 0 auto !important; border-radius: 20px !important; overflow: hidden !important; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.about-video-wrap iframe { position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; border: 0 !important; }
+
+/* About page - smaller screens */
+@media (max-width: 800px) { .about-hero-title { font-size: 36px; } .about-story-box { flex-direction: column; align-items: flex-start; text-align: left; } }
+
+/* Article page - hero section (title, back link, category pill) */
+.tip-hero { background: linear-gradient(120deg, #cfe8cd 0%, #e6efe0 30%, #f6f0e3 65%, #f8ecd9 100%); padding: 60px clamp(20px,5vw,80px) 50px; }
+.tip-hero-inner { max-width: 900px; margin: 0 auto; }
+.tip-hero-top { align-items: center; gap: 14px; margin-bottom: 22px; }
+.tip-back-link { color: #3d5c42; font-size: 14px; font-weight: 600; text-decoration: none !important; }
+.tip-back-link:hover { color: #1f3a2e; }
+.tip-category-pill { background: #fdfaf3; color: #1f3a2e; font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 999px; }
+.tip-hero-title { font-size: 44px; line-height: 1.2; color: #1a2e22; font-weight: 700; margin: 0 0 20px; }
+.tip-hero-title em { font-style: italic; color: #4a8f52; }
+.tip-hero-sub { font-size: 17px; color: #4b5b4c; line-height: 1.6; max-width: 640px; margin: 0 0 20px; }
+.tip-hero-meta { font-size: 14px; color: #6b7a6b; }
+.tip-hero-image { max-width: 1000px; margin: 0 auto 20px; border-radius: 20px; overflow: hidden; }
+.tip-hero-image img { border-radius: 20px; width: 100%; height: 450px; object-fit: cover; display: block; }
+
+/* Article page - body text with the "In this article" style sidebar */
+.tip-body-columns { max-width: 1100px !important; margin: 0 auto !important; padding: 60px clamp(20px,5vw,80px); gap: 56px !important; }
+.tip-body-columns h2 { font-size: 26px; color: #1a2e22; margin: 36px 0 14px; }
+.tip-body-columns h2:first-child { margin-top: 0; }
+.tip-body-columns p { font-size: 18px; line-height: 1.8; color: #3d453d; }
+.tip-sidebar {
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 4px 20px rgba(31, 58, 46, 0.08);
+  border-radius: 16px;
+  padding: 26px;
+  position: sticky;
+  top: 100px;
+}
+.tip-sidebar h4 { font-size: 16px; margin: 0 0 16px; }
+.tip-sidebar ul { list-style: none; margin: 0; padding: 0; }
+.tip-sidebar li { margin-bottom: 12px; }
+.tip-sidebar a { color: #4b5b4c; font-size: 14px; font-weight: 400; text-decoration: none !important; }
+.tip-sidebar a:hover { color: #1f3a2e; }
+@media (max-width: 800px) { .tip-sidebar { position: static; } }
+
+/* Video page - the video player box */
+.tip-video-section { padding: 20px clamp(20px,5vw,80px) 60px; }
+.tip-video-wrap { position: relative; width: 100%; max-width: 800px; margin: 0 auto; aspect-ratio: 16/9; border-radius: 20px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.tip-video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+/* Homepage - makes one video bigger than the normal video box */
+.tip-video-wrap-lg { max-width: 1400px !important; }
+
+/* CTA card - green box shown at the bottom of article and video pages */
+.tip-cta { background: #1f3a2e; border-radius: 24px; padding: 48px 44px; max-width: 1100px; margin: 20px auto 80px; }
+.tip-cta h3 { color: #fdfaf3; font-size: 26px; margin: 0 0 14px; }
+.tip-cta p { color: #e3ebe0; font-size: 16px; line-height: 1.6; margin: 0 0 24px; max-width: 520px; }
+.tip-cta-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+
+/* Buttons - shared style, used on About page and tip pages */
+.eco-btn { display: inline-block; padding: 14px 28px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none !important; transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.2s ease; }
+.eco-btn:hover { transform: translateY(-2px); }
+.eco-btn-light { background: #fdfaf3; color: #1f3a2e; }
+.eco-btn-light:hover { opacity: 0.9; }
+.eco-btn-outline { background: transparent; color: #fdfaf3; border: 1.5px solid rgba(253,250,243,0.5); }
+.eco-btn-outline:hover { background: rgba(253,250,243,0.12); border-color: rgba(253,250,243,0.8); }
+
+/* Homepage / Eco Tips hub - Articles, Videos, Games section */
+.ecotips-list { padding: 70px clamp(20px,5vw,80px) 90px; }
+.ecotips-list-inner { max-width: 1400px; margin: 0 auto; display: flex !important; flex-direction: column !important; gap: 36px; }
+
+/* Header above the cards */
+.ecotips-list-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; }
+.ecotips-list-eyebrow { color: #d98a5f; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 10px; }
+.ecotips-list-title { font-size: 30px; color: #1a2e22; margin: 0; max-width: 560px; line-height: 1.3; }
+.ecotips-list-btn { display: inline-block; background: #fdfaf3; border: 1px solid #e8e2d3; color: #1a2e22; font-weight: 600; font-size: 14px; padding: 10px 22px; border-radius: 999px; text-decoration: none !important; white-space: nowrap; transition: background-color 0.2s ease, color 0.2s ease; }
+.ecotips-list-btn:hover { background: #1f3a2e; color: #fdfaf3; }
+
+/* The 3 cards side by side */
+.ecotips-cards-row { display: grid !important; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+
+/* Smaller screens - fewer columns */
+@media (max-width: 1000px) { .ecotips-cards-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .ecotips-cards-row { grid-template-columns: 1fr; } .ecotips-list-head { flex-direction: column; align-items: flex-start; } }
+
+/* Card box style (white background, shadow, rounded corners) */
+.ecotips-card { background: #fff; border-radius: 20px; padding: 44px 48px; box-shadow: 0 4px 20px rgba(31,58,46,0.06); }
+
+/* Card title row (icon + "Articles"/"Videos"/"Games") */
+.ecotips-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.ecotips-card-head h2 { font-size: 22px; color: #1a2e22; margin: 0; }
+.ecotips-card-head svg { width: 20px; height: 20px; color: #2E4A38; }
+
+/* List of items inside each card */
+.ecotips-items { display: flex; flex-direction: column; }
+.ecotips-item { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; border-bottom: 1px solid #eee6d8; text-decoration: none !important; gap: 20px; }
+.ecotips-items .ecotips-item:last-child { border-bottom: none; }
+
+.ecotips-item-cat { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: #4a8f52; margin-bottom: 6px; }
+.ecotips-item-text h3 { font-size: 17px; color: #1a2e22; margin: 0; font-weight: 700; }
+.ecotips-item-desc { color: #6b7a6b; font-size: 14px; line-height: 1.5; margin: 6px 0 0; max-width: 380px; }
+
+.ecotips-item-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.ecotips-item-time { color: #8a978a; font-size: 13px; white-space: nowrap; }
+.ecotips-item-arrow { color: #8a978a; font-size: 18px; transition: transform 0.15s ease; }
+.ecotips-item:hover .ecotips-item-arrow { transform: translateX(4px); color: #1f3a2e; }
+
+/* Video items - play icon instead of arrow */
+.ecotips-video-item { justify-content: flex-start; gap: 16px; }
+.ecotips-play-icon { flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; background: #2E4A38; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+
+/* Game items - tag + title + description */
+.ecotips-games-items { display: flex; flex-direction: column; gap: 20px; }
+.ecotips-game-item { display: block; padding: 16px; border-radius: 14px; background: #fdfaf3; text-decoration: none !important; transition: background-color 0.2s ease; }
+.ecotips-game-item:hover { background: #f4ede0; }
+.ecotips-game-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.ecotips-game-tag { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+.ecotips-game-tag--green { background: #E3F3E6; color: #2E4A38; }
+.ecotips-game-tag--blue { background: #DCEEF8; color: #2E6B8A; }
+.ecotips-game-item h3 { font-size: 16px; color: #1a2e22; margin: 0 0 4px; font-weight: 700; }
+
+/* Videos card - dark green background instead of white */
+.ecotips-card--video { background: #1f3a2e; }
+.ecotips-card--video .ecotips-card-head h2,
+.ecotips-card--video .ecotips-item-text h3 { color: #fdfaf3; }
+.ecotips-card--video .ecotips-card-head svg { color: #a9c6ab; }
+.ecotips-card--video .ecotips-item-desc { color: #cdd9cd; }
+.ecotips-card--video .ecotips-item { border-bottom-color: rgba(255,255,255,0.12); }
+.ecotips-card--video .ecotips-play-icon { background: #fdfaf3; color: #1f3a2e; }
+
+/* Games card - gradient background instead of white */
+.ecotips-card--games { background: linear-gradient(120deg, #cfe8cd 0%, #e6efe0 30%, #f6f0e3 65%, #f8ecd9 100%); }
+.ecotips-card--games .ecotips-card-head h2 { color: #1a2e22; }
+.ecotips-card--games .ecotips-card-head svg { color: #2E4A38; }
+.ecotips-card--games .ecotips-game-item { background: rgba(255,255,255,0.55); }
+.ecotips-card--games .ecotips-game-item:hover { background: rgba(255,255,255,0.85); }
+.ecotips-card--games .ecotips-game-item h3 { color: #1a2e22; }
+.ecotips-card--games .ecotips-item-desc { color: #4b5b4c; }
+.ecotips-card--games .ecotips-item-time { color: #6b7a6b; }
