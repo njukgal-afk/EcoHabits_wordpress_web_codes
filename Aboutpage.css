@@ -1,0 +1,88 @@
+/* Astra Container flex-row fix - stacks items vertically instead of side by side */
+.about-hero-inner {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+.about-video,
+.about-story {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Hero - gradient background box */
+.about-hero {
+  background: linear-gradient(120deg, #cfe8cd 0%, #e6efe0 30%, #f6f0e3 65%, #f8ecd9 100%);
+  padding: 80px 0 70px;
+  text-align: center;
+}
+
+/* Small pill label*/
+.about-pill { display:inline-block; background:#fdfaf3; color:#1f3a2e; font-size:13px; font-weight:600; padding:8px 20px; border-radius:999px; margin-bottom:28px; }
+
+/* Main hero title*/
+.about-hero-title { font-size:52px; line-height:1.2; color:#1a2e22; font-weight:700; margin:0 0 24px; }
+.about-hero-title em { font-style:italic; color:#4a8f52; font-weight:700; }
+
+/* Subtitle text under the title */
+.about-hero-sub { max-width:640px; margin:0 auto; color:#5c6b5c; font-size:17px; line-height:1.6; }
+
+/* "Why we built Eco Habit" story section - spacing */
+.about-story { padding:70px 0 90px; }
+
+/* Dark green card holding the story text */
+.about-story-box { background:#1f3a2e; border-radius:24px; padding:56px 48px; display:flex; justify-content:space-between; align-items:center; gap:48px; flex-wrap:wrap; }
+
+/* Left side: heart icon + heading */
+.about-story-left { flex:0 0 auto; }
+.about-story-heart { width:26px; height:26px; color:#a9c6ab; margin-bottom:16px; display:block; }
+/* Heading - font-family removed so it uses the site's Fraunces font */
+.about-story-left h2 { font-size:32px; color:#fdfaf3; margin:0; font-weight:400; max-width:280px; }
+
+/* Right side: story text + buttons */
+.about-story-right { flex:1 1 400px; max-width:560px; display:flex; flex-direction:column; gap:28px; }
+.about-story-text { color:#e3ebe0; font-size:19px; line-height:1.75; margin:0; }
+.about-story-links { display:flex; gap:16px; flex-wrap:wrap; }
+
+/* Shared button style (used across the site) */
+.eco-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.2s ease;
+}
+.eco-btn:hover { transform: translateY(-2px); }
+.eco-btn-light { background:#fdfaf3; color:#1f3a2e; }
+.eco-btn-light:hover { opacity:0.9; }
+.eco-btn-outline { background:transparent; color:#fdfaf3; border:1.5px solid rgba(253,250,243,0.5); }
+.eco-btn-outline:hover { background:rgba(253,250,243,0.12); border-color:rgba(253,250,243,0.8); }
+
+/* Video section - landscape 16:9 box, centered */
+.about-video { padding: 60px 0 20px; }
+.about-video-wrap {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 800px !important;
+  aspect-ratio: 16 / 9 !important;
+  margin: 0 auto !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.about-video-wrap iframe {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+}
+
+/* Smaller screens: shrink title, stack story card */
+@media (max-width:800px) {
+  .about-hero-title { font-size:36px; }
+  .about-story-box { flex-direction:column; align-items:flex-start; text-align:left; }
+}
